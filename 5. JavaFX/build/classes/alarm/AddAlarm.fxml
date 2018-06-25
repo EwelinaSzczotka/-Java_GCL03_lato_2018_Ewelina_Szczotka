@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="155.0" prefWidth="300.0" style="-fx-background-color: #9DB8C1#9DB8C1;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="alarm.AddAlarmController">
+   <children>
+      <GridPane alignment="CENTER" hgap="10.0" prefHeight="155.0" prefWidth="300.0" vgap="10.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="20.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" />
+        </rowConstraints>
+         <children>
+            <Label contentDisplay="CENTER" text="Godzina:" GridPane.halignment="RIGHT">
+               <font>
+                  <Font name="Cambria Bold" size="14.0" />
+               </font></Label>
+            <Label text="Minuty:" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Cambria Bold" size="14.0" />
+               </font></Label>
+            <TextField fx:id="godzinaTF" promptText="0-23" style="-fx-focus-color: black; -fx-faint-focus-color: transparent;" GridPane.columnIndex="1" />
+            <TextField fx:id="minutyTF" promptText="0-59" style="-fx-focus-color: black; -fx-faint-focus-color: transparent;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button fx:id="addButton" mnemonicParsing="false" onAction="#handleAddButton" prefHeight="25.0" prefWidth="96.0" style="-fx-faint-focus-color: transparent; -fx-focus-color: black; -fx-border-color: black; -fx-border-radius: 3px;" text="Add" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </GridPane>
+   </children>
+</VBox>

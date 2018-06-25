@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="JUnit Test.jnlp">
+  <information>
+    <title>JUnit Test</title>
+    <vendor>Ewelina</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" java-vm-args="-javaagent:"C:\Users\Ewelina\AppData\Roaming\NetBeans\8.2\modules\ext\jacocoagent.jar"=includes=calculator.*,destfile="F:\Java\JUnit Test\jacoco.exec-33479679103948" "  href="http://java.sun.com/products/autodl/j2se"/>
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="JUnit Test" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class=""  name="JUnit Test" />
+  <update check="always"/>
+</jnlp>
